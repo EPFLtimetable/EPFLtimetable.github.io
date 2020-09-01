@@ -22,7 +22,7 @@ whenDocumentLoaded(() => {
             el_name.click();
         }
     });
-    d3.json("student.json").then(function (json) {
+    d3.json("./data/student_2019.json").then(function (json) {
         const athletes = Object.keys(json);
         // Source: https://goodies.pixabay.com/javascript/auto-complete/demo.html
         new autoComplete({
@@ -51,7 +51,7 @@ function setup(name_sciper) {
 
     var sciper = name_sciper.split("(")[1].split(")")[0];
 
-    var file = "student_courses_2019.csv";
+    var file = "./data/student_courses_2019.csv";
 
     $('#race-table').html('');
 
